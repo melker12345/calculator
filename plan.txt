@@ -1,0 +1,10 @@
+grid for botton layout -
+
+CSS
+
+add padding / margin to make the button fitt better 
+add icon to backspace
+make button scale with window
+
+JavaScript
+getElementsByName() 

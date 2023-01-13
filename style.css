@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@font-face {
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    font-weight: 100 600;
+    src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v75/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.woff2) format('woff2');
+  }
+body {
+    background: rgb(16, 16, 16);
+}
+
+
+
+.frame {
+    width: 33%;
+    height: 66%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    grid-template-areas:
+      'text-field text-field text-field text-field'
+      'c ce erase div'
+      'b7 b8 b9 mul'
+      'b4 b5 b6 su'
+      'b1 b2 b3 ad'
+      '. b0 . equal';
+    grid-gap: 5px;
+
+    border: solid rgb(49, 153, 250) 1px;
+    border-radius: 2ch;
+    box-shadow: 8px 5px 25px rgb(54, 157, 253);
+}
+
+.text-field {
+    grid-area: text-field;
+    margin: 0px;
+    margin-right: 1%;
+    height: 117px;
+    border-bottom: solid rgb(13, 13, 13) 3px;
+}
+
+.number {
+    margin-top: 0;
+    margin-bottom: 0px;
+    text-align: right;
+    color: #e4dcdc;
+    font-family: 'Inter', sans-serif;
+    font-size: 96px;
+}
+
+#b1 {grid-area: b1;}
+#b2{grid-area: b2;}
+#b3{grid-area: b3;}
+#b4{grid-area: b4;}
+#b5{grid-area: b5;}
+#b6{grid-area: b6;}
+#b7{grid-area: b7;}
+#b8{grid-area: b8;}
+#b9{grid-area: b9;}
+#b0{grid-area: b0;}
+
+#add-btn{grid-area: ad;}
+#sub-btn{grid-area: su;}
+#mul-btn{grid-area: mul;}
+#div-btn{grid-area: div;}
+
+#equal-btn{grid-area: equal;}
+#clear-btn{grid-area: c;}
+#empty-btn{grid-area: ce;}
+#erase-btn{grid-area: erase;
+  
+}
+
+
+
+.button{
+    background-color: rgb(43, 43, 43);
+    color: #e4dcdc;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+
+    border: 2px solid black;
+    border-radius: 10px;
+}
