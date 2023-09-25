@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script> 
 
@@ -14,27 +15,27 @@
 <body>
     <div class="frame">
         <div class="text-field">
-            <p class="number">1234567890</p>
+            <p id="number"></p>
         </div>
         <div class="button-area">
-            <button class="buttons" id="b0">0</button>
-            <button class="buttons" id="b1">1</button>
-            <button class="buttons" id="b2">2</button>
-            <button class="buttons" id="b3">3</button>
-            <button class="buttons" id="b4">4</button>
-            <button class="buttons" id="b5">5</button>
-            <button class="buttons" id="b6">6</button>
-            <button class="buttons" id="b7">7</button>
-            <button class="buttons" id="b8">8</button>
-            <button class="buttons" id="b9">9</button>
-            <button class="buttons" id="add-btn">+</button>
-            <button class="buttons" id="sub-btn">-</button>
-            <button class="buttons" id="mul-btn">*</button>
-            <button class="buttons" id="div-btn">/</button>
-            <button class="buttons" id="equal-btn">=</button>
-            <button class="buttons" id="clear-btn">C</button>
-            <button class="buttons" id="empty-btn">CE</button>
-            <button class="buttons" id="erase-btn">
+            <button class="buttons" id="b0" onclick="button0()">0</button>
+            <button class="buttons" id="b1" onclick="button1()">1</button>
+            <button class="buttons" id="b2" onclick="button2()">2</button>
+            <button class="buttons" id="b3" onclick="button3()">3</button>
+            <button class="buttons" id="b4" onclick="button4()">4</button>
+            <button class="buttons" id="b5" onclick="button5()">5</button>
+            <button class="buttons" id="b6" onclick="button6()">6</button>
+            <button class="buttons" id="b7" onclick="button7()">7</button>
+            <button class="buttons" id="b8" onclick="button8()">8</button>
+            <button class="buttons" id="b9" onclick="button9()">9</button>
+            <button class="buttons" id="add-btn" onclick="addFunction()">+</button>
+            <button class="buttons" id="sub-btn" onclick="add()">-</button>
+            <button class="buttons" id="mul-btn" onclick="add()">*</button>
+            <button class="buttons" id="div-btn" onclick="add()">/</button>
+            <button class="buttons" id="equal-btn" onclick="add()">=</button>
+            <button class="buttons" id="clear-btn" onclick="clear()">C</button>
+            <button class="buttons" id="empty-btn" onclick="ce()">CE</button>
+            <button class="buttons" id="erase-btn" onclick="erase()">
                 <span class="material-symbols-outlined">
                 backspace
                 </span>

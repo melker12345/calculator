@@ -7,4 +7,7 @@ add icon to backspace
 make button scale with window
 
 JavaScript
+
+
+
 getElementsByName() 
